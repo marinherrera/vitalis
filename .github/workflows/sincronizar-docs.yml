@@ -1,0 +1,25 @@
+name: Sincronizar documentação
+
+on:
+  schedule:
+    - cron: '0 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Baixar o Google Docs como Markdown
+        run: curl -fL "https://docs.google.com/document/d/1_3W5c49mGsUIDzXiBB3iY8IgLDf38DfN/export?format=md" -o README.md
+
+      - name: Commit se houve mudança
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add README.md
+          git diff --cached --quiet || (git commit -m "Atualiza documentação" && git push)
