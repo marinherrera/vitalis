@@ -68,7 +68,7 @@ Sumário
 
 ## 1.1 Tema {#1.1-tema}
 
-Desenvolvimento de biossensor para detectar desidratação ou exaustão do trabalhador rural exposto ao calor.
+Vitalis: Desenvolvimento de biossensor para detectar desidratação ou exaustão do trabalhador rural exposto ao calor.
 
 ## 1.2 TIPO DE SERVIÇO/PRODUTO {#1.2-tipo-de-serviço/produto}
 
