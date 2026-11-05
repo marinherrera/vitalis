@@ -1,0 +1,25 @@
+name: vitalis
+description: "Vitalis: monitoramento de desidratação e exaustão térmica do trabalhador rural."
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.6.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  provider: ^6.1.2
+  fl_chart: ^1.1.0
+  shared_preferences: ^2.3.0
+  crypto: ^3.0.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/emblema_vitalis.png
